@@ -166,7 +166,7 @@ public class SonarLintServerManager implements ApplicationComponent {
   }
 
   private static Path getSonarLintHome() {
-    return Paths.get(PathManager.getConfigPath()).resolve("sonarlint");
+    return Paths.get(PathManager.getTempPath()).resolve("sonarlint");
   }
 
   private StandaloneSonarLintEngineImpl createEngine() {
